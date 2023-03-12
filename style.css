@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  background: url("./images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  /* opacity: 0.8; */
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("https://fonts.google.com/specimen/Poppins");
+}
+.main {
+  display: flex;
+  /* justify-content: center */
+  position: relative;
+}
+
+.main .intro-section {
+  display: block;
+  margin: 0 49px 0 139px;
+  width: 50%;
+  padding: 25px;
+  word-wrap: break-word;
+}
+
+.main .intro-section h1 {
+  color: hsl(246, 25%, 77%);
+  letter-spacing: 0.8px;
+  font-size: 42px;
+}
+
+.main .intro-section p {
+  font-size: 16px;
+  /* color: hsl(246, 25%, 77%); */
+  margin-top: 25px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  word-wrap: break-word;
+  /* line-height: 16px; */
+}
+
+.main .form-section {
+  width: 50%;
+}
+
+.main .form-section .tryIt {
+  background-color: hsl(248, 32%, 49%);
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  box-shadow: 1px 5px hsl(251, 10%, 78%) ;
+  /* box-shadow ; */
+  /* font-weight: 400; */
+}
+
+.main .form-section .tryIt span {
+  background-color: hsl(248, 32%, 49%);
+  font-weight: 800;
+}
+
+
+.main .form-section .form{
+    background-color: white;
+    height: auto;
+    width: 340px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.main .form-section input{
+    padding: 11px 115px 11px 11px;
+    border: none;
+
+    margin-top: 15px;
+    margin-left: 20px;
+}
