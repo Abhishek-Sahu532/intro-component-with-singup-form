@@ -9,11 +9,11 @@ submitBtn.addEventListener('click', (e) => {
     let emailError = document.querySelector(".emailError");
 
 
-if(firstName == null || secondName == null || email == null || password == null ){
-    emailError.innerHTML = 'Provide the required details.'
+    if (firstName == null || secondName == null || email == null || password == null) {
+        emailError.innerHTML = 'Provide the required details.'
         emailError.style.display = "block";
         return
-}
+    }
 
 
     if (emailFormat.test(email)) {
