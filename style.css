@@ -8,18 +8,13 @@ body {
   margin: 0;
   background: url("./images/bg-intro-desktop.png");
   background-color: hsl(0, 100%, 74%);
-  /* opacity: 0.8; */
+ 
 }
-/* 
-@font-face {
-  font-family: Poppins;
-  src: url("https://fonts.google.com/specimen/Poppins");
-} */
+
 
 .main {
   display: flex;
   flex-direction: row;
-  /* background-color: aqua; */
   height: 500px;
   width: 950px;
 }
@@ -47,6 +42,43 @@ body {
   font-weight: 400;
   /* letter-spacing: 0.8px; */
   word-wrap: break-word;
+}
+
+
+@media screen and (max-width: 375px) {
+  body{
+    display: block;
+  }
+
+  .main{
+display: flex;
+flex-direction: column;
+height: auto;
+width: 100vw;
+margin: 0;
+padding: 0;
+  }
+  
+  .main .intro-section {
+    display: block;
+    padding: 15px 25px 25px 15px;
+    text-align: center;
+
+  }
+
+  .main .intro-section h1 {
+    font-size: 2rem;
+    padding-top: 40px;
+    line-height: 36px
+  }
+
+  .main .intro-section p {
+    margin-top: 25px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    word-wrap: break-word;
+  }
 }
 
 /* FORM SECTION START */
@@ -141,4 +173,41 @@ body {
   font-size: 12px;
   font-weight: 600;
   display: none;
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+  .main .form-section {
+    padding: 15px 20px 15px 20px;
+  }
+  .main .form-section .tryIt {
+    padding: 13px;
+    width: 20.5rem;
+    font-size: 12px;
+  }
+  .main .form-section .form {
+    height: auto;
+    width: 290px;
+    margin-top: 15px;
+  }
+
+  .main .form-section input {
+    padding: 10px;
+    width:17rem;;
+    border: 1px solid hsl(246, 25%, 77%);
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 5px;
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+  }
+
+  .main .form-section button {
+    padding: 10px;
+    width: 18.5rem;
+    margin-left: 0px;
+  }
+
 }
